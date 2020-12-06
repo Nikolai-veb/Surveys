@@ -6,9 +6,9 @@ git clone https://github.com/Nikolai-veb/Surveys.git
 
 cd Surveys 
 
-pip install -r 
 
-requestments.txt
+
+pip install -r requestments.txt
 
 python manage.py runserver
 
