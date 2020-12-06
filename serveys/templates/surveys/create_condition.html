@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="{% url 'condition' %}" method="post" class="mt-4" id="formReview">
+    {% csrf_token %}
+    <div>
+        {{form.as_p}}
+    </div>
+    <button type="submit" class=" btn btn-success ">
+        Отправить
+    </button>
+</form>
+{% endblock %}
