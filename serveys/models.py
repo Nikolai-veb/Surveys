@@ -49,7 +49,7 @@ class Surveys(models.Model):
     type_s = models.ForeignKey(Type_surveys, verbose_name="Тип опроса", on_delete=models.CASCADE, related_name="survey")
     create = models.DateTimeField("Дата создания", auto_now=True)
     update = models.DateTimeField("Дата обновления", auto_now_add=True)
-    #slug = models.SlugField(max_length=200, unique=True, db_index=True)
+    #t slug = models.SlugField(max_length=200, unique=True, db_index=True)
 
     class Meta:
         verbose_name = "Опрос"
